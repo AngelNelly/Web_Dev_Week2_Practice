@@ -1,70 +1,129 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title> HTML List, Images, Tables, Forms</title>
-    </head>
-    <body>
-        <h2>Ordered List</h2>
-        <ol type="I" start="5">
-            <li>Kenya</li>
-            <li>Nigeria</li>
-            <li>South Africa</li>
-        </ol>
+  <head>
+    <title>HTML List, Images, Tables, Forms</title>
+  </head>
+  <body>
+    <h2>Ordered List</h2>
+    <ol type="I" start="5">
+      <li>Kenya</li>
+      <li>Nigeria</li>
+      <li>South Africa</li>
+    </ol>
 
-        <h2>Unodered List</h2>
-        <ul type="circle">
-            <li>Kenya</li>
-            <li>Zambia</li>
-            <li>Sount Sudan</li>
-        </ul>
+    <h2>Unodered List</h2>
+    <ul type="circle">
+      <li>Kenya</li>
+      <li>Zambia</li>
+      <li>Sount Sudan</li>
+    </ul>
 
-        <h2>Definition List</h2>
-        <dl>
-            <dt>HTML</dt>
-            <dd>This is an HTML Documents</dd>
-        </dl>
+    <h2>Definition List</h2>
+    <dl>
+      <dt>HTML</dt>
+      <dd>This is an HTML Documents</dd>
+    </dl>
 
-        <h2>Images</h2>
-        <h3>Internal Images</h3>
-        <img src="WhatsApp Cover.png" alt="Job description" height="500" width="350">
+    <h2>Images</h2>
+    <h3>Internal Images</h3>
+    <img
+      src="WhatsApp Cover.png"
+      alt="Job description"
+      height="500"
+      width="350"
+    />
 
-        <h3>External Images</h3>
-        <img src="https://images.pexels.com/photos/1563356/pexels-photo-1563356.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" height="500" width="500">
+    <h3>External Images</h3>
+    <img
+      src="https://images.pexels.com/photos/1563356/pexels-photo-1563356.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      alt=""
+      height="500"
+      width="500"
+    />
 
-        <h3>HTML Tables</h3>
-        <table border="1">
-            <thead>
-                <tr>
-                    <th>Name</th>
-                    <th>Age</th>
-                    <th>Country</th>
-                </tr>
-            </thead>
-            <tbody>
-               <tr>
-                <td>John</td>
-                <td>25</td>
-                <td>Nigeria</td>
-               </tr>
-               <tr>
-                <td>John</td>
-                <td>25</td>
-                <td>Nigeria</td>
-               </tr>
-               <tr>
-                <td>John</td>
-                <td>25</td>
-                <td>Nigeria</td>
-               </tr>
-            </tbody>
-            <tfoot>
-                <tr><td>Students's</td>
-                <tr><td>Data</td>
-                </tr>
-            </tfoot>
-        </table>
+    <h3>HTML Tables</h3>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Country</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>John</td>
+          <td>25</td>
+          <td>Nigeria</td>
+        </tr>
+        <tr>
+          <td>John</td>
+          <td>25</td>
+          <td>Nigeria</td>
+        </tr>
+        <tr>
+          <td>John</td>
+          <td>25</td>
+          <td>Nigeria</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>Students's</td>
+        </tr>
+        <tr>
+          <td>Data</td>
+        </tr>
+      </tfoot>
+    </table>
 
-        <h2>HTML Forms</h2>
-        <form action="" method=""></form>
-    </body>
+    <h2>HTML Forms</h2>
+    <form action="" method="">
+      <label for="full_name">Full Name:</label>
+      <input
+        type="text"
+        id="full_name"
+        name="full_name"
+        required
+        placeholder="Enter Your Full Name"
+      />
+      <br />
+      <br />
+      <label for="email_address">Email Address:</label>
+      <input
+        type="text"
+        id="email_address"
+        name="email_address"
+        placeholder="angelachinweike@gmail.com"
+      />
+      <br /><br />
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" />
+      <br /><br />
+
+      <label for="Address">Address</label>
+      <input type="text" id="Address" name="Address" />
+      <br /><br />
+      <label for="Gender">Gender</label>
+      <input type="radio" name="gender" value="Female" />Female
+      <input type="radio" name="gender" value="Male" /> Male <br/> <br>
+      <label for="hobby">Hobbies</label>
+      <input type="checkbox" name="hobby" value="travel" /> Travel
+      <input type="checkbox" name="hobby" value="music" /> Music
+      <input type="checkbox" name="hobby" value="reading" /> Reading
+      <input type="checkbox" name="hobby" value="swimming" /> Swimming
+      <br /><br />
+      <label>Country</label>
+      <select name="country" id="country">
+        <option>--Select Country--</option>
+        <option value="South Africa">South Africa</option>
+        <option value="Botswana">Botswana</option>
+        <option value="Ghana">Ghana</option>
+        <option value="Tanzania">Tanzania</option>
+      </select>
+      <br /><br />
+      <button type="submit">Submit</button>
+      <input type="reset" value="Cancel/Reset" />
+    </form>
+  </body>
 </html>
